@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 class TurnRight : public ICommand {
 private:
     IControlable* _cObj;
@@ -17,6 +18,23 @@ public:
 
 private:
     void Rotate() {
+=======
+#include"TurnRight.hpp"
+    TurnRight::TurnRight(IControlable* cObj) {
+        _cObj = cObj;
+    }
+
+    void TurnRight::execute() override {
+        rotate();
+    }
+
+    Commands TurnRight::getEnum() override {
+        return Commands::Right;
+    }
+
+
+    void TurnRight::rotate() {
+>>>>>>> Stashed changes
         switch (_cObj->GetDirection()) {
             case Directions::Up:
                 _cObj->SetDirection(0);
@@ -33,5 +51,9 @@ private:
             default:
                 break;
         }
+<<<<<<< Updated upstream
     }
 };
+=======
+    };
+>>>>>>> Stashed changes
