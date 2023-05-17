@@ -16,16 +16,16 @@ void MoveForward::moveByDirection() {
     switch (_cObj->GetDirection()) {
     case Directions::Up:
 <<<<<<< Updated upstream
-         _cObj->SetPositionY(_cObj->GetPosition().y - 1);
+         _cObj->setPositionY(_cObj->getPosition().y - 1);
         break;
     case Directions::Down:
-        _cObj->SetPositionY(_cObj->GetPosition().y + 1);
+        _cObj->setPositionY(_cObj->getPosition().y + 1);
         break;
     case Directions::Left:
-        _cObj->SetPositionX(_cObj->GetPosition().x - 1);
+        _cObj->setPositionX(_cObj->getPosition().x - 1);
         break;
     case Directions::Right:
-        _cObj->SetPositionX(_cObj->GetPosition().x + 1);
+        _cObj->setPositionX(_cObj->getPosition().x + 1);
 =======
          _cObj->setPositionY(_cObj->getPosition().y - 1);
         break;

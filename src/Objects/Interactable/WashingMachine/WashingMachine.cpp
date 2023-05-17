@@ -1,12 +1,6 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-<<<<<<< Updated upstream
-void WashingMachine :: React()
-    {
-        cout << "Rabbids Sucked!" << endl;
-=======
 
     WashingMachine()
     {
@@ -42,5 +36,4 @@ void WashingMachine :: React()
     string getObjectSymbol()
     {
         return objectSymbol;
->>>>>>> Stashed changes
     }
